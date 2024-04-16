@@ -20,6 +20,7 @@ export const themeSlice = createSlice({
     reducers: {
         setTheme: (state, action: PayloadAction<string>) => {
             state.value = action.payload;
+            window.localStorage.setItem(storageName, action.payload);
         },
     },
 });
