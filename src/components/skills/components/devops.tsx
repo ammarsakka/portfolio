@@ -1,9 +1,9 @@
 import React from "react";
 import { SkillsList } from "../constants/constant";
-import { useTheme } from "../../../assets/store/localStorage";
+import { useAppSelector } from "../../../assets/hooks";
 
 function Devops() {
-    const { theme } = useTheme();
+    const theme = useAppSelector(state => state.theme.value);
 
     return (
         <div className="grid gap-4">

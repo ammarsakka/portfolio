@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { useTheme } from "../../../assets/store/localStorage";
+import { useAppDispatch, useAppSelector } from "../../../assets/hooks";
+import { setTheme } from "../../../assets/stores/theme";
 
 function ThemeMode() {
     const [loading, setLoading] = useState(false);
-    const { theme, setTheme } = useTheme();
+    const theme = useAppSelector((state) => state.theme.value);
+    const dispatch = useAppDispatch();
 
     const changeThemeHandler = () => {
         setLoading(true);
 
         setTimeout(() => {
             setLoading(false);
+            let themeString = "dark";
 
             if (theme === "dark") {
-                setTheme("light");
-                return;
+                themeString = "light";
             }
 
-            setTheme("dark");
+            dispatch(setTheme(themeString));
         }, 1000);
     };
 

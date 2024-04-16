@@ -1,9 +1,9 @@
 import React from "react";
 import { SocialMedia } from "../constants/social";
-import { useTheme } from "../../../assets/store/localStorage";
+import { useAppSelector } from "../../../assets/hooks";
 
 function Social() {
-    const { theme } = useTheme();
+    const theme = useAppSelector(state => state.theme.value)
 
     return (
         <div className="grid gap-6">
