@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mode-button {
+    position: relative;
+    z-index: 2;
+}
+
+.mode-button:hover~.light {
+    content: "";
+    position: absolute;
+    background-color: #27272a;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: identifier 250ms 250ms linear;
+    animation-fill-mode: forwards;
+}
+
+.light.growth {
+    position: absolute;
+    background-color: #27272a;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: identifierGrowth 1s linear !important;
+    animation-fill-mode: forwards;
+}
+
+.mode-button:hover~.dark {
+    content: "";
+    position: absolute;
+    background-color: #f8fafc;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: identifier 250ms 250ms linear;
+    animation-fill-mode: forwards;
+}
+
+.dark.growth {
+    position: absolute;
+    background-color: #f8fafc;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: identifierGrowth 1s linear !important;
+    animation-fill-mode: forwards;
+}
+
+@keyframes identifier {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    100% {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@keyframes identifierGrowth {
+    0% {
+        width: 250px;
+        height: 250px;
+    }
+
+    100% {
+        width: 300vw;
+        height: 350vh;
+    }
+}

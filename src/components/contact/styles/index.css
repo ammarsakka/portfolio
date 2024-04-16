@@ -1,0 +1,56 @@
+form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+form .formgroup {
+    display: grid;
+    gap: 0.5rem;
+}
+
+form .formgroup label {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+form .formgroup label span {
+    color: rgb(226, 23, 23);
+}
+
+form .formgroup input,
+form .formgroup textarea {
+    border: 1px solid #333333;
+    border-radius: 0.2rem;
+    background-color: rgba(245, 245, 245, 0.534);
+    resize: none;
+    outline: none;
+    padding: 0.4rem 0.6rem;
+}
+
+.dark form .formgroup input,
+.dark form .formgroup textarea {
+    border: 1px solid #6c6c6c;
+    background-color: rgba(245, 245, 245, 0.1);
+}
+
+form .formgroup input:focus,
+form .formgroup textarea:focus {
+    border: 1px solid #2563eb;
+}
+
+form .formgroup button {
+    border: none;
+    outline: none;
+    background-color: #2563eb;
+    width: fit-content;
+    padding: 0.8rem 2.5rem;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    transition: all 150ms linear;
+    margin-left: auto;
+    color: whitesmoke;
+}
+
+form .formgroup button:hover {
+    background-color: #235edd;
+}
