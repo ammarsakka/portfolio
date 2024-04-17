@@ -5,7 +5,7 @@ function About() {
     return (
         <div className="grid gap-10 py-8">
             <h1 className="text-2xl font-bold">About Me</h1>
-            <div className="grid grid-cols-2 gap-10 items-center">
+            <div className="grid mobile:grid-cols-2 gap-10 items-center">
                 <div className="grid gap-6">
                     <p className="text-base">
                         I graduated as a Software Engineer from University Kuala
@@ -23,7 +23,7 @@ function About() {
                         something amazing together!
                     </p>
                 </div>
-                <div className="grow">
+                <div className="w-[80vw] mobile:w-full">
                     <CarModel />
                 </div>
             </div>

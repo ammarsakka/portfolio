@@ -12,12 +12,12 @@ function Contact() {
                     Feel free to reach out
                 </p>
             </div>
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid mobile:grid-cols-2 gap-10">
                 <div className="grid gap-10">
                     <ContactForm />
                     <Social />
                 </div>
-                <div className="flex items-center justify-center relative rounded overflow-hidden">
+                <div className="mobile:flex items-center justify-center relative rounded overflow-hidden hidden">
                     <div className="z-10">
                         <img
                             src="/images/logos/text_logo.png"

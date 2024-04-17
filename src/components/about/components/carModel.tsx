@@ -5,7 +5,7 @@ import { CameraControls } from "@react-three/drei";
 
 function CarModel() {
     return (
-        <Canvas style={{ height: "300px" }}>
+        <Canvas className="!h-[400px] mobile:!h-[300px]">
             <ambientLight intensity={Math.PI / 2} />
             <spotLight
                 position={[10, 10, 10]}

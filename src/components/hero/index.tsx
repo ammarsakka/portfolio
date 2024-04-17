@@ -1,6 +1,6 @@
 function Hero() {
     return (
-        <div className="grid grid-cols-2 justify-between gap-4 items-center">
+        <div className="grid mobile:grid-cols-2 justify-between gap-4 items-center">
             <div className="flex flex-col gap-6">
                 <h1 className="font-semibold text-4xl">
                     Hello this is{" "}
@@ -26,7 +26,7 @@ function Hero() {
                     alt="this is a placeholder to be replaced with developer one"
                     width={600}
                     height={400}
-                    className="rounded-md shadow-md"
+                    className="rounded-md shadow-md w-full mobile:w-fit"
                 />
             </div>
         </div>

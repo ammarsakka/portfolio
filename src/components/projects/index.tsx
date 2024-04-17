@@ -6,7 +6,7 @@ function Projects() {
     return (
         <div className="grid gap-10 py-8">
             <h1 className="text-2xl font-bold">My Projects</h1>
-            <div className="grid gap-6">
+            <div className="grid gap-16 mobile:gap-6">
                 {ProjectsList.slice(0, PROJECTS_PER_PAGE).map(
                     (project, index) => (
                         <Project key={index} project={project} />

@@ -7,6 +7,9 @@ module.exports = {
             fontFamily: {
                 ubuntu: ["Ubuntu", "sans-serif"],
             },
+            screens: {
+                mobile: "900px",
+            },
         },
     },
     plugins: [],
