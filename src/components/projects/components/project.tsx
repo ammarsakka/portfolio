@@ -1,3 +1,4 @@
+import { useAppSelector } from "../../../assets/hooks";
 import { ProjectDetails } from "../constants/interfaces";
 
 interface props {
@@ -5,6 +6,8 @@ interface props {
 }
 
 function Project({ project }: props) {
+    const theme = useAppSelector((state) => state.theme.value);
+
     return (
         <div className="grid gap-4">
             <div>
@@ -28,7 +31,7 @@ function Project({ project }: props) {
                         <div className="flex flex-wrap gap-2">
                             {project.technologies.map((technology, index) => (
                                 <img
-                                    src={`/images/icons/${technology}.svg`}
+                                    src={`/images/icons/${theme}/${technology}.svg`}
                                     alt={technology}
                                     key={index}
                                     width={32}

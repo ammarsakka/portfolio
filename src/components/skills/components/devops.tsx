@@ -1,23 +1,16 @@
 import React from "react";
 import { SkillsList } from "../constants/constant";
 import { useAppSelector } from "../../../assets/hooks";
+import { IconsProps } from "../interfaces/interface";
 
-function Devops() {
-    const theme = useAppSelector(state => state.theme.value);
-
+function Devops({ theme }: IconsProps) {
     return (
         <div className="grid gap-4">
             <h3 className="text-lg font-semibold">DevOps</h3>
             <div className="flex flex-wrap gap-4">
                 {SkillsList.devops.sort().map((item, index) => (
                     <img
-                        src={`/images/icons/${
-                            item === "github"
-                                ? theme === "dark"
-                                    ? `${item}_white`
-                                    : item
-                                : item
-                        }.svg`}
+                        src={`/images/icons/${theme}/${item}.svg`}
                         alt={item}
                         key={index}
                         width={64}

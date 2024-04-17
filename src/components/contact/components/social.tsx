@@ -3,7 +3,7 @@ import { SocialMedia } from "../constants/social";
 import { useAppSelector } from "../../../assets/hooks";
 
 function Social() {
-    const theme = useAppSelector(state => state.theme.value)
+    const theme = useAppSelector((state) => state.theme.value);
 
     return (
         <div className="grid gap-6">
@@ -25,13 +25,7 @@ function Social() {
                         title={social.title}
                     >
                         <img
-                            src={`/images/icons/${
-                                social.title === "github"
-                                    ? theme === "dark"
-                                        ? `${social.title}_white`
-                                        : social.title
-                                    : social.title
-                            }.svg`}
+                            src={`/images/icons/${theme}/${social.title}.svg`}
                             alt={social.title}
                             width={24}
                             height={24}
