@@ -7,13 +7,16 @@ function About() {
             <h1 className="text-2xl font-bold">About Me</h1>
             <div className="grid grid-cols-2 gap-10 items-center">
                 <p className="text-base">
-                    I am a passionate software engineer with a knack for
-                    crafting scalable, efficient, and innovative software
-                    solutions. My expertise spans across various technologies
-                    and methodologies, allowing me to deliver impactful
-                    solutions tailored to meet specific business needs
+                    I'm a dedicated software engineer who absolutely loves
+                    creating scalable, efficient, and innovative software
+                    solutions. With a wide range of skills across different
+                    technologies and methodologies, I pride myself on delivering
+                    solutions that truly make a difference for businesses. When
+                    I'm not coding, you'll often find me diving into video games
+                    or exploring new hobbies. Let's craft something amazing
+                    together!
                 </p>
-                <div>
+                <div className="grow">
                     <CarModel />
                 </div>
             </div>
