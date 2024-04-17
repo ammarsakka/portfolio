@@ -11,14 +11,12 @@ function Hero() {
                 <div className="flex flex-col gap-2">
                     <p className="text-lg">Welcome to my portfolio!</p>
                     <p className="text-sm">
-                        I graduated as a Software Engineer from University Kuala
-                        Lumpur, Malaysia, where I honed my technical skills and
-                        passion for coding. Additionally, I hold another degree
-                        in Accounting from my home country. Balancing the worlds
-                        of technology and finance has given me a unique
-                        perspective, blending analytical thinking with creative
-                        problem-solving. I'm excited to bring this diverse
-                        background to everything I do!
+                        I'm a dedicated software engineer who absolutely loves
+                        creating scalable, efficient, and innovative software
+                        solutions. With a wide range of skills across different
+                        technologies and methodologies, I pride myself on
+                        delivering solutions that truly make a difference for
+                        businesses.
                     </p>
                 </div>
             </div>
