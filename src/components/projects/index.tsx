@@ -2,6 +2,7 @@ import { useState } from "react";
 import Project from "./components/project";
 import { PROJECTS_PER_PAGE } from "./constants/constant";
 import { ProjectsList } from "./constants/projectsList";
+import moment from "moment";
 
 function Projects() {
   const [perPage, setPerPage] = useState(PROJECTS_PER_PAGE);
@@ -16,7 +17,9 @@ function Projects() {
     <div className="grid gap-10 py-8">
       <h1 className="text-2xl font-bold">My Projects</h1>
       <div className="grid gap-16 mobile:gap-6">
-        {ProjectsList.reverse()
+        {ProjectsList.sort(
+          (a, b) => moment(b.date).diff(moment(a.date))
+        )
           .slice(0, perPage)
           .map((project, index) => (
             <Project key={index} project={project} />

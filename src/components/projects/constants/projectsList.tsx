@@ -87,7 +87,7 @@ export const ProjectsList = [
   {
     title: "Agmo EV",
     directory: "agmoev",
-    date: "September 2023",
+    date: "March 2024",
     technologies: ["nestjs", "postgresql", "typescript"],
     description:
       "Developing the backend for an Electric Vehicle (EV) Admin portal, enabling efficient management of EV infrastructure. Providing robust functionalities for monitoring charging stations, managing user data, processing payments, and generating insightful analytics to support sustainable transportation initiatives.",
