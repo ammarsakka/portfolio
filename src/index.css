@@ -6,7 +6,7 @@
 
 .mode-button {
     position: relative;
-    z-index: 2;
+    z-index: 20;
 }
 
 .mode-button:hover~.light {
@@ -17,7 +17,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: 10;
     animation: identifier 250ms 250ms linear;
     animation-fill-mode: forwards;
 }
@@ -29,7 +29,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: 10;
     animation: identifierGrowth 1s linear !important;
     animation-fill-mode: forwards;
 }
@@ -42,7 +42,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: 10;
     animation: identifier 250ms 250ms linear;
     animation-fill-mode: forwards;
 }

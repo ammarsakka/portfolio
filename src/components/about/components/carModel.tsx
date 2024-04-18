@@ -1,7 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import Car from "./car";
-import { CameraControls } from "@react-three/drei";
 
 function CarModel() {
     return (
@@ -19,7 +18,6 @@ function CarModel() {
                 decay={0}
                 intensity={Math.PI}
             />
-            <CameraControls />
             <Car />
         </Canvas>
     );
