@@ -1,18 +1,18 @@
 export const SocialMedia = [
     {
         title: "linkedin",
-        url: "",
+        url: "https://www.linkedin.com/in/sakka-ammar/",
     },
     {
         title: "instagram",
-        url: "",
+        url: "https://instagram.com/sakka.ammar",
     },
     {
         title: "telegram",
-        url: "",
+        url: "https://t.me/ammar_sakka",
     },
     {
         title: "github",
-        url: "",
+        url: "https://github.com/ammarsakka",
     },
 ];

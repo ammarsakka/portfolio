@@ -17,7 +17,7 @@ function Social() {
             <div className="flex flex-wrap gap-4 justify-center items-center">
                 {SocialMedia.sort().map((social, index) => (
                     <a
-                        href="http://"
+                        href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         key={index}
