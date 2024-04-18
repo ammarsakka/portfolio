@@ -20,7 +20,7 @@ function Contact() {
                 <div className="mobile:flex items-center justify-center relative rounded overflow-hidden hidden">
                     <div className="z-10">
                         <img
-                            src="./images/logos/text_logo.png"
+                            src={`${process.env.PUBLIC_URL}/images/logos/text_logo.png`}
                             alt="text logo"
                             width={162}
                             height={162}

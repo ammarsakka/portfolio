@@ -1,43 +1,97 @@
 const imageSize = {
-    width: 500,
-    height: 300,
+  width: 500,
+  height: 300,
 };
 
 export const ProjectsList = [
-    {
-        title: "E-commerce Platform",
-        image: `${process.env.REACT_APP_IMAGE_PLACEHOLDER_URL}/seed/picsum/${imageSize.width}/${imageSize.height}`,
-        date: "Apr 23, 2023",
-        technologies: [
-            "nextjs",
-            "mysql",
-            "html",
-            "css",
-            "javascript",
-        ],
-        description:
-            "Developed a full-fledged e-commerce platform that allows users to browse products, add them to the cart, and complete the purchase process.",
-        responsibilities:
-            "Designed and implemented the backend using Django, integrated payment gateways, and ensured secure data storage with PostgreSQL.",
-    },
-    {
-        title: "Inventory Management System",
-        image: `${process.env.REACT_APP_IMAGE_PLACEHOLDER_URL}/seed/car/${imageSize.width}/${imageSize.height}`,
-        date: "Jul 28, 2023",
-        technologies: ["java", "mysql", "Angular"],
-        description:
-            "Built an inventory management system for a retail company to track stock levels, sales, and supplier information.",
-        responsibilities:
-            "Developed the backend APIs using Spring Boot, created a responsive frontend with Angular, and implemented authentication and authorization features.",
-    },
-    {
-        title: "Chat Application",
-        image: `${process.env.REACT_APP_IMAGE_PLACEHOLDER_URL}/seed/house/${imageSize.width}/${imageSize.height}`,
-        date: "Jan 21, 2023",
-        technologies: ["nodejs", "react", "mysql"],
-        description:
-            "Designed and developed a real-time chat application that enables users to communicate instantly.",
-        responsibilities:
-            "Implemented the backend using Node.js and Socket.io for real-time communication, built the frontend with React, and ensured data persistence with MongoDB.",
-    },
+  {
+    title: "Quadri Investment Management",
+    directory: "quadriwealth",
+    date: "April 2021",
+    technologies: ["wordpress", "mysql", "php", "css", "javascript"],
+    description:
+      "Developed an Investment Management website customized to meet the client's specifications, serving as a news post platform.",
+    responsibilities:
+      "Designed and developed this website utilizing WordPress, CSS, and JavaScript for the frontend, and PHP for the backend. I also ensured secure data storage by integrating MySQL.",
+  },
+  {
+    title: "E-commerce Platforms",
+    directory: "shop",
+    date: "December 2021",
+    technologies: ["php", "mysql", "javascript", "css", "html"],
+    description:
+      "Crafting tailored E-commerce sites for seamless shopping experiences. Safe, simple, and scalable for success in today's market.",
+    responsibilities:
+      "Designing, developing, and optimizing E-commerce websites for seamless user experience and secure transactions, while staying updated on industry trends.",
+  },
+  {
+    title: "Exitology",
+    directory: "exitology",
+    date: "March 2023",
+    technologies: ["wordpress", "css", "mysql", "php", "javascript"],
+    description:
+      "Creating a Business Development website to facilitate growth strategies, networking, and industry insights for enterprises. Providing a platform for showcasing services, fostering partnerships, and driving expansion opportunities.",
+    responsibilities:
+      "Designing and developing the website, curating content to showcase services and industry insights, fostering partnerships, and optimizing user experience for seamless navigation and engagement.",
+  },
+  {
+    title: "Sweetella",
+    directory: "sweetella",
+    date: "May 2022",
+    technologies: ["nodejs", "react", "mysql", "typescript", "tailwind"],
+    description:
+      "Crafting a Wedding Agency platform for seamless event planning, connecting couples with vendors, and ensuring memorable experiences.",
+    responsibilities:
+      "Designing and developing the platform, managing vendor databases, ensuring user-friendly interfaces, and providing ongoing support.",
+  },
+  {
+    title: "Quick Disk Inquiry System",
+    directory: "quickdisk",
+    date: "February 2023",
+    technologies: ["nodejs", "react", "mysql", "typescript", "tailwind"],
+    description:
+      "Developing an Inquiry System for efficient communication and data management. Streamlining the process of receiving, tracking, and responding to inquiries, ensuring timely and accurate responses.",
+    responsibilities:
+      "Designing and implementing the Inquiry System, managing inquiry data, ensuring smooth communication channels, and providing support for users.",
+  },
+  {
+    title: "Novux",
+    directory: "novux",
+    date: "May 2023",
+    technologies: ["wordpress", "css", "mysql"],
+    description:
+      "Creating an Office Rental website for easy access to available spaces, facilitating seamless transactions between landlords and tenants. Providing a platform to showcase rental listings, schedule viewings, and manage leasing agreements.",
+    responsibilities:
+      "Designing and developing the Office Rental website, curating and updating rental listings, facilitating communication between landlords and tenants, managing viewing schedules, and ensuring a smooth leasing process.",
+  },
+  {
+    title: "Dgtech",
+    directory: "mydgtech",
+    date: "June 2023",
+    technologies: ["wordpress", "css", "mysql"],
+    description:
+      "Establishing a Digital Marketing Agency focused on delivering tailored strategies for online success. Offering expertise in SEO, social media, content marketing, and advertising to help businesses thrive in the digital landscape.",
+    responsibilities:
+      "Crafting customized digital marketing strategies, managing campaigns across various platforms, analyzing performance metrics, conducting market research, and providing actionable insights to optimize client success.",
+  },
+  {
+    title: "Friendly Marketing",
+    directory: "friendlymarketing",
+    date: "September 2023",
+    technologies: ["nextjs", "tailwind", "mysql", "typescript"],
+    description:
+      "Creating a comprehensive Digital Marketing and IT Solution platform, offering innovative strategies and technology solutions to empower businesses. Seamlessly integrating digital marketing tactics with cutting-edge IT solutions to maximize online presence, efficiency, and growth.",
+    responsibilities:
+      "Designing and developing the platform, implementing digital marketing strategies, deploying IT solutions, managing client accounts, analyzing performance metrics, and providing ongoing support and optimization for business success.",
+  },
+  {
+    title: "Agmo EV",
+    directory: "agmoev",
+    date: "September 2023",
+    technologies: ["nestjs", "postgresql", "typescript"],
+    description:
+      "Developing the backend for an Electric Vehicle (EV) Admin portal, enabling efficient management of EV infrastructure. Providing robust functionalities for monitoring charging stations, managing user data, processing payments, and generating insightful analytics to support sustainable transportation initiatives.",
+    responsibilities:
+      "Designing and developing the backend infrastructure for the EV Admin portal, implementing features for monitoring charging stations, managing user accounts and data, facilitating payment processing, ensuring system security, and generating comprehensive analytics to support decision-making.",
+  },
 ];

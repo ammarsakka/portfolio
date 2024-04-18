@@ -20,7 +20,7 @@ function Hero() {
       <div className="flex justify-end">
         <div className="w-full mobile:w-[400px]">
           <img
-            src="./images/main/Ammar-Portfolio.png"
+            src={`${process.env.PUBLIC_URL}/images/main/Ammar-Portfolio.png`}
             alt="this is a placeholder to be replaced with developer one"
             className="rounded-md w-full h-full object-contain drop-shadow-lg"
           />

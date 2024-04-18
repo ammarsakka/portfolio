@@ -1,6 +1,6 @@
 export interface ProjectDetails {
     title: string;
-    image: string;
+    directory: string;
     date: string;
     technologies: string[];
     description: string;

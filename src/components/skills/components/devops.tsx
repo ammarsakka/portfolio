@@ -1,6 +1,5 @@
 import React from "react";
 import { SkillsList } from "../constants/constant";
-import { useAppSelector } from "../../../assets/hooks";
 import { IconsProps } from "../interfaces/interface";
 
 function Devops({ theme }: IconsProps) {
@@ -10,7 +9,7 @@ function Devops({ theme }: IconsProps) {
             <div className="flex flex-wrap gap-4">
                 {SkillsList.devops.sort().map((item, index) => (
                     <img
-                        src={`./images/icons/${theme}/${item}.svg`}
+                        src={`${process.env.PUBLIC_URL}/images/icons/${theme}/${item}.svg`}
                         alt={item}
                         key={index}
                         width={64}
