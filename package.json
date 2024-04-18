@@ -1,6 +1,7 @@
 {
-  "name": "my_app",
+  "name": "ammar_portfolio",
   "version": "0.1.0",
+  "homepage": "https://ammarsakka.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.105.4",
