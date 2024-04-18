@@ -34,10 +34,10 @@ function ThemeMode() {
     return (
         <div className="relative">
             <button
-                className={`p-2 rounded-full hover:bg-slate-600/50 text-yellow-500 hover:shadow mode-button`}
+                className={`p-2 rounded-full hover:bg-slate-600/50 hover:shadow mode-button`}
                 onClick={changeThemeHandler}
             >
-                {theme === "light" ? <FaMoon size={20} /> : <FaSun size={20} />}
+                {theme === "light" ? <FaMoon size={20} className="text-logo-yellow-light" /> : <FaSun size={20} className="text-logo-yellow-dark" />}
             </button>
             <span
                 className={`${theme} shadow-inner ${loading ? "growth" : ""}`}

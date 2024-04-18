@@ -24,6 +24,7 @@ function Contact() {
                             alt="text logo"
                             width={162}
                             height={162}
+                            className="drop-shadow-lg"
                         />
                     </div>
                     <img

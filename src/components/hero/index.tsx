@@ -4,7 +4,7 @@ function Hero() {
       <div className="flex flex-col gap-6">
         <h1 className="font-semibold text-4xl">
           Hello this is{" "}
-          <span className="text-orange-500 uppercase font-bold">Ammar</span>
+          <span className="text-logo-orange capitalize font-bold">Ammar Sakka</span>
         </h1>
         <div className="flex flex-col gap-2">
           <p className="text-lg">Welcome to my portfolio!</p>
