@@ -8,7 +8,7 @@ function Car(props: any) {
     let windowSize = 0;
     const [isMobile, setMobile] = useState(false);
     const { nodes, animations, cameras } = useGLTF(
-        "/models/hover_bike_-_the_rocket.glb"
+        "./models/hover_bike_-_the_rocket.glb"
     );
     let mixer = new THREE.AnimationMixer(nodes._rootJoint);
 
@@ -64,4 +64,4 @@ function Car(props: any) {
 
 export default Car;
 
-useGLTF.preload("/models/hover_bike_-_the_rocket.glb");
+useGLTF.preload("./models/hover_bike_-_the_rocket.glb");

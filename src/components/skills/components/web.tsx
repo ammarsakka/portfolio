@@ -9,7 +9,7 @@ function Web({ theme }: IconsProps) {
             <div className="flex flex-wrap gap-4">
                 {SkillsList.web.sort().map((item, index) => (
                     <img
-                        src={`/images/icons/${theme}/${item}.svg`}
+                        src={`./images/icons/${theme}/${item}.svg`}
                         alt={item}
                         key={index}
                         width={64}

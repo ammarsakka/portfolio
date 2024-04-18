@@ -25,7 +25,7 @@ function Social() {
                         title={social.title}
                     >
                         <img
-                            src={`/images/icons/${theme}/${social.title}.svg`}
+                            src={`./images/icons/${theme}/${social.title}.svg`}
                             alt={social.title}
                             width={24}
                             height={24}

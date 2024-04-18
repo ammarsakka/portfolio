@@ -31,7 +31,7 @@ function Project({ project }: props) {
                         <div className="flex flex-wrap gap-2">
                             {project.technologies.map((technology, index) => (
                                 <img
-                                    src={`/images/icons/${theme}/${technology}.svg`}
+                                    src={`./images/icons/${theme}/${technology}.svg`}
                                     alt={technology}
                                     key={index}
                                     width={32}
