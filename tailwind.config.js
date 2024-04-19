@@ -19,6 +19,9 @@ module.exports = {
           },
         },
       },
+      animation: {
+        alertAnimate: "alertAnimate 6s linear",
+      },
     },
   },
   plugins: [],
