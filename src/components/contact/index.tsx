@@ -27,11 +27,6 @@ function Contact() {
                             Feel free to reach out
                         </p>
                     </div>
-                    <img
-                        src={`${process.env.REACT_APP_IMAGE_PLACEHOLDER_URL}/600/600`}
-                        alt="this is a placeholder about the contact me section to be replaced with the related one"
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                    />
                 </div>
             </div>
         </div>
