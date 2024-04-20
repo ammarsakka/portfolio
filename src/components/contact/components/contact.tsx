@@ -27,7 +27,7 @@ function ContactForm() {
       .post(`${EMAIL_SERVER_URL}/email/ammar_portfolio`, {
         name,
         email,
-        messageText,
+        message: messageText,
       })
       .then((data) => {
         if (data.data) {
