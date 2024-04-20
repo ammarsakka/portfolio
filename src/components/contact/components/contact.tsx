@@ -14,44 +14,35 @@ function ContactForm() {
   const [message, setMessage] = useState<message | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const handlePost = async (name: string, email: string, message: string) => {
-    return await axios
-      .post(`${EMAIL_SERVER_URL}/email/ammar_portfolio`, {
-        name,
-        email,
-        message,
-      })
-      .then((data) => data.data);
-  };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [messageText, setMessageText] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setLoading(true);
 
-    const name = (
-      (e.currentTarget.elements as any).fullname as HTMLInputElement
-    ).value;
-    const email = ((e.currentTarget.elements as any).email as HTMLInputElement)
-      .value;
-    const message = (
-      (e.currentTarget.elements as any).message as HTMLInputElement
-    ).value;
+    await axios
+      .post(`${EMAIL_SERVER_URL}/email/ammar_portfolio`, {
+        name,
+        email,
+        messageText,
+      })
+      .then((data) => {
+        if (data.data) {
+          emptyFormElements();
+          setLoading(false);
+        }
 
-    let result = await handlePost(name, email, message);
-
-    if (result) {
-      emptyFormElements(e.currentTarget.elements as any);
-      setLoading(false);
-    }
-
-    setMessage(result);
+        setMessage(data.data);
+      });
   };
 
-  const emptyFormElements = (form: any) => {
-    (form.fullname as HTMLInputElement).value = "";
-    (form.email as HTMLInputElement).value = "";
-    (form.message as HTMLInputElement).value = "";
+  const emptyFormElements = () => {
+    setName("");
+    setEmail("");
+    setMessageText("");
   };
 
   return (
@@ -67,6 +58,10 @@ function ContactForm() {
             autoComplete="true"
             required
             disabled={loading}
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
           />
         </div>
         <div className="formgroup">
@@ -79,6 +74,10 @@ function ContactForm() {
             autoComplete="true"
             required
             disabled={loading}
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
           />
         </div>
         <div className="formgroup">
@@ -90,6 +89,10 @@ function ContactForm() {
             rows={10}
             required
             disabled={loading}
+            value={messageText}
+            onChange={(e) => {
+              setMessageText(e.target.value);
+            }}
           ></textarea>
         </div>
         <div className="formgroup">
