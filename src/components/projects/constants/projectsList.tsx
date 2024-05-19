@@ -94,4 +94,24 @@ export const ProjectsList = [
     responsibilities:
       "Designing and developing the backend infrastructure for the EV Admin portal, implementing features for monitoring charging stations, managing user accounts and data, facilitating payment processing, ensuring system security, and generating comprehensive analytics to support decision-making.",
   },
+  {
+    title: "Chat APP",
+    directory: "chat",
+    date: "April 2024",
+    technologies: ["react", "firebase", "typescript", "tailwind"],
+    description:
+      "Building a real-time chat application that enables seamless communication between users. The application supports one-on-one chats, group messaging, file sharing, and notification features. It ensures a secure and scalable environment to enhance user interaction and engagement.",
+    responsibilities:
+      "Architecting and developing the backend and frontend of the chat application, implementing real-time messaging using WebSocket technology, managing user authentication and data storage, integrating file sharing capabilities, and ensuring the application is scalable and secure. Additionally, providing robust notification systems to keep users informed and engaged.",
+  },
+  {
+    title: "OfficeCrafters",
+    directory: "officecrafters",
+    date: "May 2024",
+    technologies: ["nextjs", "threejs", "typescript", "tailwind"],
+    description:
+      "Creating a comprehensive office agency website to streamline the process of finding, leasing, and managing office spaces. The platform offers features such as property listings, virtual tours, tenant management, lease tracking, and detailed analytics to optimize the office space rental experience.",
+    responsibilities:
+      "Designing and implementing the full-stack architecture for the OfficeCrafters website, developing features for property listing management, integrating virtual tour capabilities, building tools for tenant and lease management, ensuring secure data handling, and providing detailed analytics to support business decisions and enhance user experience.",
+  },
 ];
